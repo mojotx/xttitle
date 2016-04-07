@@ -22,9 +22,9 @@
 
 ### SEE ALSO
 
-       Jarvis.com xttitle history:  http://www.jarvis.com/xttitle/index.html
+       [Jarvis.com xttitle history](http://www.jarvis.com/xttitle/index.html)
 
-       Thomas Dickey's XTerm page:  http://invisible-island.net/xterm/xterm.html
+       [Thomas Dickey's XTerm page](http://invisible-island.net/xterm/xterm.html)
 
 
 ### BUGS
