@@ -1,10 +1,11 @@
-# xttitle − change window and icon title for Xterm windows
+# xttitle
+## change window and icon title for Xterm windows
 
-## SYNOPSIS
+### SYNOPSIS
 
        xttitle <window title> [ <icon title> ]
 
-## DESCRIPTION
+### DESCRIPTION
 
        The  xttitle  program  is  simple utility that allows you to change the
        window title and icon name for an xterm window.
@@ -13,23 +14,23 @@
        as open source as an exercise in building packages for Redhat
        Linux.
 
-## FILES
+### FILES
 
        `/usr/bin/xttitle`     The program executable.
 
        `/usr/share/man/man1/xttitle.1`    The man page
 
-## SEE ALSO
+### SEE ALSO
 
-       [Jarvis.com xttitle history](http://www.jarvis.com/xttitle/index.html)
+       Jarvis.com xttitle history:  http://www.jarvis.com/xttitle/index.html
 
-       [Thomas Dickey's XTerm page](http://invisible-island.net/xterm/xterm.html)
+       Thomas Dickey's XTerm page:  http://invisible-island.net/xterm/xterm.html
 
 
-## BUGS
+### BUGS
 
        None known.
 
-## AUTHORS
+### AUTHORS
 
-       [Michael Jarvis](https://github.com/mojoTX)
+       Michael Jarvis
