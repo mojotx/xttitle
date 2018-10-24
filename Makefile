@@ -6,7 +6,7 @@ RM=rm -rvf
 
 
 xttitle: src/xttitle.c
-	$(CC) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
 	$(RM) xttitle core
