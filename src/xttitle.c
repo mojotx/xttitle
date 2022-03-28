@@ -28,44 +28,33 @@ along with this program.  If not, see <htp://www.gnu.org/licenses/>.
 
 #define FORMAT "\033]2;%s\007\033\\\033[1A\n\033]1;%s\007\033\\\033[1A\n\033]21;%s\033\\\033[1A\n\033]2L;%s\033\\\033[1A\n"
 
-static void usage( const char *prog );
-
-int main( int argc, char *argv[] )
-{
+int main(int argc, char *argv[]) {
+    int      rc = EXIT_SUCCESS;
     char *title = NULL; /* Used to set the title of the window */
-    char *icon  = NULL; /* Used to set the icon name */
+    char  *icon = NULL; /* Used to set the icon name */
 
-    switch ( argc ) {
-        case 1:
-            usage(argv[0]);
-            exit(1);
-            break;      /*  Never reached */
 
+    switch (argc) {
         case 2:
             /*  If there was just one parameter, set icon to same as title.   */
             title = argv[1];
-            icon  = argv[1];
+            icon = argv[1];
             break;
 
         case 3:
             /*  They passed both window title AND icon name */
             title = argv[1];
-            icon  = argv[2];
+            icon = argv[2];
             break;
 
         default:
-            usage(argv[0]);
-            exit(1);
-            break;      /*  Never reached */
+            printf("Usage:  %s <window title> [ <icon title> ]\n", argv[0]);
+            rc = EXIT_FAILURE;
+            break;
     }
 
-    printf( FORMAT, title, icon, title, icon );
+    if (rc == EXIT_SUCCESS)
+        printf(FORMAT, title, icon, title, icon);
 
-    exit(0);
+    return rc;
 }
-
-static void usage( const char *prog )
-{
-    printf("Usage:  %s <window title> [ <icon title> ]\n", prog );
-}
-
